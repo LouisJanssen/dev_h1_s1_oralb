@@ -1,7 +1,7 @@
 {
 "version": 3,
-"mappings": "",
-"sources": [],
+"mappings": "AAAA,UAGE,CAFA,WAAW,CAAE,YAAY,CACzB,GAAG,CAAE,6GAA8G,CCFrH,UAAU,CACR,SAAS,CAAE,GAAG,CCDhB,MAAM,CACJ,OAAO,CAAE,IAAI,CACb,eAAe,CAAE,YAAY,CAE/B,QAAQ,CACN,eAAe,CAAE,IAAI,CACrB,KAAK,CAAE,OAAO,CACd,WAAW,CCJE,qBAAsB,CHQrC,IAAI,CACF,UAAU,CAAE,IAAI,CAGlB,UAAU,CACR,KAAK,CAAE,IAAI,CACX,MAAM,CAAE,MAAM",
+"sources": ["../sources/scss/app.scss","../sources/scss/views/_header.scss","../sources/scss/views/_footer.scss","../sources/scss/views/_variables.scss"],
 "names": [],
 "file": "main.css"
 }
