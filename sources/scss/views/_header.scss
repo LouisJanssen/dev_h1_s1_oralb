@@ -2,7 +2,22 @@ header img{
   max-width: 100px;
 }
 #header{
-  background: $background-color;
+  background: rgba($background-color, $alpha: 0.75);
+  font-size: 0.8rem;
+}
+#header div{
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#header div div{
+  align-items: flex-end;
+}
+#header h2{
+  margin: 0;
+  padding: 5px 20px;
+  font-weight: normal;
 }
 /***********************
     Media Queries
