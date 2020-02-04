@@ -1,0 +1,24 @@
+body{
+  margin: 0;
+  padding: 0;
+  background: url(../images/background.png) no-repeat;
+  font-size: 62,5%;
+  font-weight: normal;
+  color: $secondary-color;
+  font-family: $primary-font;
+}
+
+a{
+  text-decoration: none;
+  color: $secondary-color;
+  font-family: $primary-font;
+}
+
+a:hover{
+  font-weight: bold;
+}
+
+.container{
+  width: 80vw;
+  margin: 0 auto;
+}

@@ -11,7 +11,9 @@ header img{
   justify-content: space-between;
   align-items: center;
 }
-#header div div{
+#header nav{
+  display: flex;
+  justify-content: space-between;
   align-items: flex-end;
 }
 #header h2{
@@ -19,12 +21,6 @@ header img{
   padding: 5px 20px;
   font-weight: normal;
 }
-/***********************
-    Media Queries
-***********************/
-@media screen and (max-width:960px){
-
-}
-@media screen and (max-width:620px){
-
+#header a:hover h2{
+  font-weight: bold;
 }

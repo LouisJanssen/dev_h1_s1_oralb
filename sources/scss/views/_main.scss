@@ -1,0 +1,30 @@
+main{
+  background: url(../images/io_side.png) no-repeat -20px 200px;
+  background-size: 50%;
+}
+.main__logo{
+  display: flex;
+  justify-content: center;
+  margin: 40px auto;
+}
+.main__logo img{
+  max-width: 20vw;
+  max-height: 10vh;
+  margin: 12px;
+}
+h1{
+  text-align: center;
+  font-weight: normal;
+  font-size: 3.5rem;
+  border-bottom: 1px solid #FFFFFF;
+  margin: 0 auto 70px auto;
+  padding-bottom: 5px;
+  width: 800px;
+}
+h3{
+  font-weight: normal;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 3rem;
+  width: 820px;
+}
