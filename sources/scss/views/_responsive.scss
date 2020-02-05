@@ -28,7 +28,7 @@
         width: 8vw;
     }
     .main__logo{
-        margin: 30% 0.5% 0.5% 0.5%;
+        margin: 20% 0.5% 0.5% 0.5%;
     }
     nav{
         justify-content: space-around;
@@ -49,5 +49,39 @@
     }
 }
 @media screen and (max-width:720px){
-
+    ul.hidden-lg li img{
+        width: 10vw;
+        padding: 10px;
+    }
+    h1{
+        font-size: 2.3rem;
+    }
+    main{
+        background: url(../images/io_front.png) no-repeat -1vw 30vh;
+        background-size: 200px;
+    }
+    .main__article h2{
+        font-size: 2rem;
+    }
+      .main__article ul{
+        font-size: 1rem;
+    }
+    .main__link{
+        font-size: 1rem;
+    }
+    .main__link a{
+        border: 2px solid $secondary-color;
+    }
+    .main__link img{
+        max-width: 3vw
+    }
+    .main__footer h3{
+        font-size: 1rem;
+    }
+    .main__footer p{
+        font-size: 0.5rem;
+    }
+    .footer__preorder{
+        font-size: 1rem;
+    }
 }

@@ -19,7 +19,7 @@ nav ul{
   display: flex;
   justify-content: space-between;
 }
-nav ul li{
+nav ul.hidden-sm li{
   font-size: 1.2rem;
   padding:20px 20px;
 }
@@ -32,4 +32,11 @@ nav ul li{
 }
 .ul__li--preorder:hover a{
   background: $secondary-color;
+}
+ul.hidden-lg{
+  margin: 0;
+}
+ul.hidden-lg li img{
+  width: 10vw;
+  padding: 10px 50px;
 }
