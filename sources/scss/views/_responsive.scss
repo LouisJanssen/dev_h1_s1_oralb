@@ -56,7 +56,7 @@
     h1{
         font-size: 2.3rem;
     }
-    main{
+    #main{
         background: url(../images/io_front.png) no-repeat -1vw 30vh;
         background-size: 200px;
     }
@@ -84,4 +84,8 @@
     .footer__preorder{
         font-size: 1rem;
     }
+    footer img{
+        max-width:26px;
+        padding: 5px;
+      }
 }

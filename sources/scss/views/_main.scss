@@ -1,4 +1,4 @@
-main{
+#main{
   background: url(../images/io_front.png) no-repeat -1vw 40vh;
   background-size: 400px;
 }
@@ -10,7 +10,7 @@ main{
 .main__logo img{
   max-width: 20vw;
   max-height: 10vh;
-  margin: 0.5%;
+  margin: 2.5%;
   transform: translateY(-300px);
   transition: 1s;
 }
@@ -28,7 +28,7 @@ h1{
   max-width: 70%;
   margin: 2% auto 0 auto;
 }
-main > section{
+.main__section{
   display: flex;
   justify-content: flex-end;
   margin: 15vw 0;
@@ -116,4 +116,40 @@ main section:hover .main__article h2, main section:hover .main__article ul{
   background: $secondary-color;
   color: $background-color;
   border: 3px solid $background-color;
+}
+.back_to_top{
+  margin:0 auto;
+  width: 7vw;
+  text-align: center;
+  padding: 0;
+}
+.back_to_top img{
+  width: 3vw;
+}
+
+/**
+page caracteristiques
+**/
+#main_2{
+  background: url(../images/io_original.png) no-repeat center -20%;
+  background-size: 10vw;
+}
+section[class^="main2__section"]{
+  margin-top: 10%;
+  display: flex;
+  flex-flow: column;
+}
+.main2__section--left{
+  align-content: flex-start;
+}
+.main2__section--right{
+  align-items: flex-end;
+  text-align: end;
+  transform: translateY(-100%);
+}
+.main2__article{
+  width: 33%;
+}
+.main2__article h2{
+  border-bottom: 1px $secondary-color solid;
 }
