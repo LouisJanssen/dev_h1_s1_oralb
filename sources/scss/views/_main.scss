@@ -1,74 +1,126 @@
+main{
+  background: url(../images/io_front.png) no-repeat -1vw 40vh;
+  background-size: 400px;
+}
 .main__logo{
   display: flex;
   justify-content: center;
-  margin: 40px auto;
+  margin: 10% auto 5% auto;
 }
 .main__logo img{
   max-width: 20vw;
   max-height: 10vh;
-  margin: 12px;
+  margin: 0.5%;
   transform: translateY(-300px);
   transition: 1s;
 }
 h1{
   text-align: center;
   font-weight: normal;
-  font-size: 3.5rem;
-  border-bottom: 1px solid #FFFFFF;
-  margin: 0 auto 70px auto;
-  padding-bottom: 5px;
-  width: 70%;
+  letter-spacing: -0.2rem;
+  font-size: 3.3rem;
+  margin: 0 auto;
+  max-width: 100%;
   transition: letter-spacing 1s;
+}
+.main__div--border{
+  border-top: 1px solid #FFFFFF;
+  max-width: 70%;
+  margin: 2% auto 0 auto;
 }
 h3{
   font-weight: normal;
   text-align: center;
   margin: 0 auto;
   font-size: 3rem;
-  width: 72%;
+  max-width: 72%;
   transition: font-size 0.75s;
 }
-main section{
+main > section{
   display: flex;
   justify-content: flex-end;
-  padding: 200px 0;
+  margin: 15vw 0;
+  padding: 1% 0;
 }
-.main__article{
-  border-left: 1.5px #FFFFFF solid;
-  padding-left: 20px;
-  width: 65%;
+.main__article{  
+  border-left: 1px solid #FFFFFF;
+  width: 60%;
+  padding-left: 3%;
   font-size: 2.5rem;
 }
-.main__article p{
-  margin: 5px 0;
+.main__article h2{
+  margin: 0;
+  padding: 0 0 5% 0;
+  font-size: 3rem;
+  font-weight: normal;
   transition: transform 1s;
+}
+.main__article ul{
+  margin: 0;
+  padding-left: 2vw;
+  transition: transform 1s;
+  font-size: 2rem;
+}
+.main__article ul li{
+  margin-bottom: 2%;
 }
 .main__link{
   display: flex;
   justify-content: flex-end;
   align-items: center;
   font-size: 2rem;
-  padding: 20px 20px 60px 20px;
+  padding: 5% 5% 10% 5%;
   transition: 0.75s;
 }
+.main__link a{
+  padding: 5px 10px;
+  border: 3px solid $secondary-color;
+  border-radius: 25px;
+}
 .main__link img{
-  width: 3vw
+  max-width: 3vw
+}
+.main__footer{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  border-top: 1px solid #FFFFFF;
+  background: rgba($color: #000000, $alpha: 0.25);
+}
+.main__footer img{
+  max-width: 30px;
+}
+.main__footer h3{
+  font-size: 1.5rem;
+  margin: 0 auto;
+}
+.main__footer__article{
+  max-width: 25%;
+  display: flex;
+  padding: 5px;
+}
+.main__footer__article ul{
+  text-align: center;
+  padding: 0;
+  list-style: none;
 }
 /*********************
     ANIMATIONS
 *********************/
 body:hover .main__logo img {
-  transform: translateY(30px);
+  transform: translateY(30%);
 }
 h1:hover{
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.1rem;
 }
-h3:hover{
-  font-size: 3.05rem;
-}
-.main__article:hover p{
-  transform: translateX(50px);
+main section:hover .main__article h2, main section:hover .main__article ul{
+  transform: translateX(5vw);
 }
 .main__link:hover{
   font-size: 2.1rem;
+}
+.main__link a:hover{
+  background: $secondary-color;
+  color: $background-color;
+  border: 3px solid $background-color;
 }

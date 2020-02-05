@@ -1,8 +1,8 @@
 #footer{
   background: $background-color;
 }
-#footer > div{
-  padding: 10px;
+.footer__media{
+  padding: 0;
   text-align: center;
 }
 footer a{
@@ -20,4 +20,22 @@ footer img{
 }
 .footer__link{
   padding: 20px;
+}
+.footer__preorder{
+  padding: 30px 0;
+  font-size: 2rem;
+  text-align: center;
+}
+.footer__preorder a{
+  padding: 5px 10px;
+  border: 3px solid $secondary-color;
+  border-radius: 25px;
+}
+/*********************
+    ANIMATIONS
+*********************/
+.footer__preorder a:hover{
+  background: $secondary-color;
+  color: $background-color;
+  border: 3px solid $background-color;
 }

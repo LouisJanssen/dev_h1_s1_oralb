@@ -1,26 +1,35 @@
-header img{
-  max-width: 100px;
+header{
+  background: $background-color;
+  position: fixed;
+  width: 100%;
+  top:0;
+  z-index: 1000;
 }
-#header{
-  background: rgba($background-color, $alpha: 0.75);
-  font-size: 0.8rem;
-}
-#header div{
-  height: 10vh;
+nav{
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-#header nav{
+nav img{
+  width: 100px;
+}
+nav ul{
+  padding: 0;
+  list-style: none;
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
 }
-#header h2{
-  margin: 0;
-  padding: 5px 20px;
-  font-weight: normal;
+nav ul li{
+  font-size: 1.2rem;
+  padding:20px 20px;
 }
-#header a:hover h2{
+.ul__li--preorder a{
+  background: $tertiary-color;
+  border-radius: 3%;
+  color: $primary-color;
   font-weight: bold;
+  padding: 10px 20px;
+}
+.ul__li--preorder:hover a{
+  background: $secondary-color;
 }
