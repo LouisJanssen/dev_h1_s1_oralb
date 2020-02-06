@@ -53,6 +53,17 @@
     .main2__section2 h2:hover{
         letter-spacing: 0rem;
     }
+    .main2__article2{
+        flex-flow: column;
+    }
+    .row_1{
+        width: 100%;
+        justify-content: space-around;
+        padding: 20px 0;
+    }
+    .row_1 img{
+        width: 10vw;
+    }
     ul.hidden-lg li img{
         width: 50px;
         padding: 30px;
@@ -76,6 +87,9 @@
     .main_4 h2{
         font-size: 2rem;
       }
+    .main_5__rdv{
+        width: 40vw;
+    }
 }
 @media screen and (max-width:720px){
     ul.hidden-lg li img{
@@ -92,7 +106,7 @@
     .main__article h2{
         font-size: 2rem;
     }
-      .main__article ul{
+    .main__article ul{
         font-size: 1rem;
     }
     .main__link{
@@ -126,6 +140,9 @@
     .click_me{
         display: block;
     }
+    .main2__article::after{
+        display: none;
+    }
     .main2__section2 h2{
         font-size: 2rem;
     }
@@ -133,6 +150,12 @@
         font-size: 2rem;
     }
     .main_3 p{
+        font-size: 1rem;
+    }
+    .main_5 ul h2{
+        font-size: 2rem;
+    }
+    .main_5 ul p{
         font-size: 1rem;
     }
 }
@@ -145,7 +168,26 @@
     }
     form img{
         width: 40vw;
-      }
+    }
+    .main_5__montparnasse{
+        display: none;
+    }
+    .main_5__list{
+    border-left: none;
+    }
+    .main_5 ul{
+        padding: 0 10px;
+        text-align: center;
+    }
+    .main_5 section{  
+      margin-left:0;
+    }
+    .main_5__rdv{
+        width: 60vw;
+    }
+    .main_5__fauteuil{
+      margin: 10vh 0;
+    }
 }
 @media screen and (max-width:370px){
     .main__logo img{
@@ -176,6 +218,9 @@
     .main2__section2 h2{
         font-size: 2rem;
     }
+    .main2__section img.absolute {
+        left: 52%;
+    }
     .main_3 section{
         flex-flow: column;
     }
@@ -187,5 +232,8 @@
     }
     .main2__article--text{
         display: none;
+    }
+    .main_5__rdv{
+        width: 100%;
     }
 }

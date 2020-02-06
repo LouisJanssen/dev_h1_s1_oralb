@@ -1,3 +1,6 @@
+/*******************
+      INDEX
+*******************/
 #main{
   background: url(../images/io_front.png) no-repeat -1vw 40vh;
   background-size: 400px;
@@ -132,7 +135,7 @@ main section:hover .main__article h2, main section:hover .main__article ul{
   transform: scale(1.2);
 }
 /*********************
-page caracteristiques
+    CARACTERISTIQUES
 **********************/
 .main2__section{
   margin-top: 15vh;
@@ -165,6 +168,11 @@ page caracteristiques
 .click_me::after{
   content:" →"
 }
+.main2__article::after{
+  content:url(../images/white_arrow_small.png);
+  position: absolute;
+  left: 0;
+}
 .main2__section h2::after{
   transform: translateY(1px);;
   content: '';
@@ -182,6 +190,11 @@ page caracteristiques
   justify-content: space-between;
   padding-top: 5vh;
   margin-bottom: 20vh;
+}
+.row_1{
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
 }
 .main2__article2 img{
   padding: 5px 10px;
@@ -363,5 +376,6 @@ input[type=submit]:hover{
   text-align: center;
 }
 .main_5__fauteuil img{
+  transform: translateX(-20%);
   width: 30vw;
 }
