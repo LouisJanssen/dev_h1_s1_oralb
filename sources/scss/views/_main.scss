@@ -328,3 +328,40 @@ form img{
 input[type=submit]:hover{
   background-color: $secondary-color;
 }
+/*********************
+    EVENTS
+*********************/
+.main_5{
+  display: flex;
+}
+.main_5 ul h2{
+  font-size: 2.5rem;
+}
+.main_5 ul p{
+  font-size: 1.5rem;
+}
+.main_5 section{  
+  margin-left: 10vw;
+}
+.main_5 ul{
+  list-style: none;
+  padding: 0;
+  padding-left: 2vw;
+}
+.main_5__rdv{
+  border: 1px solid $secondary-color;
+  background: $background-color;
+  text-align: center;
+  width: 30vw;
+  margin: 10vh auto;
+}
+.main_5__list{
+  border-left: 1px solid $secondary-color;
+}
+.main_5__fauteuil{
+  margin-top: 10vh;
+  text-align: center;
+}
+.main_5__fauteuil img{
+  width: 30vw;
+}
