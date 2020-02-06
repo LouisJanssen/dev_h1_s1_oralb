@@ -42,18 +42,17 @@ h1{
   width: 60%;
   padding-left: 3%;
   font-size: 2.5rem;
+  transition: transform 0.4s;
 }
 .main__article h2{
   margin: 0;
   padding: 0 0 5% 0;
   font-size: 3rem;
   font-weight: normal;
-  transition: transform 0.4s;
 }
 .main__article ul{
   margin: 0;
   padding-left: 2vw;
-  transition: transform 0.4s;
   font-size: 2rem;
 }
 .main__article ul li{
@@ -120,11 +119,11 @@ body:hover .main__logo img {
 h1:hover{
   letter-spacing: 0.1rem;
 }
-main section:hover .main__article h2, main section:hover .main__article ul{
-  transform: translateX(5vw);
+main section:hover .main__article{
+  transform: scale(1.1);
 }
 .main__link:hover{
-  font-size: 2.1rem;
+  transform: scale(1.05);
 }
 .main__link a:hover{
   background: $secondary-color;
