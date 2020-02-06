@@ -119,7 +119,7 @@ main section:hover .main__article h2, main section:hover .main__article ul{
 }
 .back_to_top{
   margin:0 auto;
-  width: 7vw;
+  width: 100%;
   text-align: center;
   padding: 0;
 }
@@ -152,25 +152,36 @@ section[class^="main2__section-"]{
 }
 .main2__section--left img.absolute{
   max-width: 10vw;
-  bottom: 17.5%;
+  top: 0;
   left:105%;
+}
+.main2__section--left  article img.absolute{
+  top: -46.5vh;
 }
 .main2__section--right img.absolute{
   max-width: 10vw;
-  top: 0;
+  top: -4.2vh;
   right: 75.2%;
 }
 .main2__article img.absolute , .main2__article img.absolute{
   display:none;
 }
 .main2__section--left article{
-  padding-bottom: 150px;
-}
-.main2__section--left :last-child{
-  padding-top: 400px;
+  padding-bottom: 24%;
 }
 .main2__section--right article{
-  padding-top: 200px;
+  padding-top: 25%;
+}
+.main2__section--left :last-child{
+  padding-top: 80%;
+  padding-bottom: 0;
+}
+.main2__section--right :last-child{
+  padding-top: 5%;
+  padding-bottom: 0;
+}
+.main2__section2{
+  margin-top: 20vh;
 }
 .main2__article2{
   display: flex;
@@ -181,6 +192,7 @@ section[class^="main2__section-"]{
 .main2__article2 img{
   padding: 5px 10px;
   width: 5vw;
+  transition: 0.75s;
 }
 .main2__section2 h2{
   font-size: 3rem;
@@ -205,5 +217,5 @@ section[class^="main2__section-"]{
   letter-spacing: 0.2rem;
 }
 .main2__article2 img:hover{
-  border: 1px solid #FFFFFF;
+  transform: scale(1.1);
 }

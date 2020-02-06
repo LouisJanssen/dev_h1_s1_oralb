@@ -47,6 +47,12 @@
         color: $background-color;
         border: 3px solid $background-color;
     }
+    .main2__section2 h2{
+        font-size: 2.5rem;
+      }
+      .main2__section2 h2:hover{
+        letter-spacing: 0rem;
+      }
 }
 @media screen and (max-width:720px){
     ul.hidden-lg li img{
@@ -87,5 +93,38 @@
     footer img{
         max-width:26px;
         padding: 5px;
+      }
+      .main2__section2 h2{
+        font-size: 2rem;
+      }
+}
+@media screen and (max-width:370px){
+    .main__logo img{
+        max-width: 20vw;
+    }
+    h1{
+        font-size: 2rem;
+    }
+    #main{
+        background: url(../images/io_front.png) no-repeat -1vw 30vh;
+        background-size: 150px;
+    }
+    .main__article h2{
+        font-size: 1.5rem;
+    }
+      .main__article ul{
+        font-size: 0.5rem;
+    }
+    .main__link{
+        font-size: 0.5rem;
+    }
+    .main__link a{
+        border: 1.5px solid $secondary-color;
+    }
+    .main__link img{
+        max-width: 2vw
+    }
+    .main2__section2 h2{
+        font-size: 2rem;
       }
 }
