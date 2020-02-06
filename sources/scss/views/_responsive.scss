@@ -49,10 +49,15 @@
     }
     .main2__section2 h2{
         font-size: 2.5rem;
-      }
-      .main2__section2 h2:hover{
+    }
+    .main2__section2 h2:hover{
         letter-spacing: 0rem;
-      }
+    }
+    
+    ul.hidden-lg li img{
+        width: 50px;
+        padding: 30px;
+    }
 }
 @media screen and (max-width:720px){
     ul.hidden-lg li img{
