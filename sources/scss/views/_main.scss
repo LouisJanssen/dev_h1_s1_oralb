@@ -131,55 +131,45 @@ main section:hover .main__article h2, main section:hover .main__article ul{
 /*********************
 page caracteristiques
 **********************/
-.main2__div--flex {
-  display: flex;
-  justify-content: space-around;
-}
-section[class^="main2__section-"]{
+.main2__section{
   margin-top: 15vh;
-}
-.main2__section--right{
-  text-align: end;
-  flex-flow: column;
-  display: flex;
-  align-items: flex-end;
-}
-.main2__article{
-  width: 50%;
 }
 .main2__article h2{
   border-bottom: 1px $secondary-color solid;
   font-weight: normal;
+  transition: 0.5s;
 }
-.main2__section--left img.absolute{
-  max-width: 10vw;
-  top: 0;
-  left:105%;
+.main2__section img.absolute{
+  top:0;
+  left:60%;
+  width: 20vh;
 }
-.main2__section--left  article img.absolute{
-  top: -46.5vh;
-}
-.main2__section--right img.absolute{
-  max-width: 10vw;
-  top: -4.2vh;
-  right: 75.2%;
-}
-.main2__article img.absolute , .main2__article img.absolute{
+.main2__article img.absolute{
   display:none;
 }
-.main2__section--left article{
-  padding-bottom: 24%;
+.main2__section ul{
+  width: 40%;
+  padding: 0 0 0 5px;
+  list-style: none;
 }
-.main2__section--right article{
-  padding-top: 25%;
+.main2__section li{
+  margin-bottom: 15vh;
 }
-.main2__section--left :last-child{
-  padding-top: 80%;
-  padding-bottom: 0;
+.click_me{
+  display: none;
+  padding: 0;
 }
-.main2__section--right :last-child{
-  padding-top: 5%;
-  padding-bottom: 0;
+.click_me::after{
+  content:" →"
+}
+.main2__section h2::after{
+  transform: translateY(1px);;
+  content: '';
+  display: block;
+  width: 0;
+  height: 1.5px;
+  background: $secondary-color;
+  transition: width .3s;
 }
 .main2__section2{
   margin-top: 20vh;
@@ -205,14 +195,15 @@ section[class^="main2__section-"]{
 /*********************
     ANIMATIONS
 *********************/
-.main2__section--left .main2__article:hover img.absolute{
+.main2__article:hover img.absolute{
   display:block;
 }
-.main2__section--right .main2__article:hover img.absolute{
-  display:block;
+.main2__article:hover h2::after {
+  width: 140%;
 }
 .main2__article:hover h2{
   font-weight: bold;
+  letter-spacing: 0.1rem;
 }
 .main2__section2 h2:hover{
   letter-spacing: 0.2rem;
@@ -220,27 +211,73 @@ section[class^="main2__section-"]{
 .main2__article2 img:hover{
   transform: scale(1.1);
 }
-/*********
-    POILS
-*********/
-#main_3 section div , #main_3 section article{
+/***********
+    LES +
+***********/
+.main_3 section .main_3__img , .main_3 section article{
   width: 50%;
 }
-#main_3 section{
+.main_3 section{
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-#main_3 article{
+.main_3 article{
   padding: 0 5%;
 }
-#main_3 h2{
+.main_3 h2{
   font-size: 3rem;
   border-bottom: 1px solid $secondary-color;
 }
-#main_3 p{
+.main_3 p{
   font-size: 1.5rem;
 }
-#main_3 img{
+.main_3 img{
   width: 100%;
 }
+/**************
+  FORMULAIRE
+  ************/
+  form {
+    margin: 0 auto;
+    width: 400px;
+    padding: 1em;
+  }
+  
+  form div + div {
+    margin-top: 1em;
+  }
+  
+  label {
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+  }
+  
+  input, textarea {
+    font: 1em sans-serif;
+    width: 300px;
+    box-sizing: border-box;
+    border: 1px solid #999;
+  }
+  input:focus, textarea:focus {
+    border-color: #000;
+  }
+  
+  textarea {
+    vertical-align: top;
+    height: 5em;
+  }
+  
+  .button {
+    padding-left: 90px;
+  }
+  
+  button {
+    margin-left: .5em;
+  }
+  
+  .seperation {
+    display:flex;
+    justify-content: space-between;
+  }
