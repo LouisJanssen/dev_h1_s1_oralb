@@ -29,6 +29,7 @@ nav ul.hidden-sm li{
   color: $primary-color;
   font-weight: bold;
   padding: 10px 20px;
+  transition: 0.4s;
 }
 .ul__li--preorder:hover a{
   background: $secondary-color;

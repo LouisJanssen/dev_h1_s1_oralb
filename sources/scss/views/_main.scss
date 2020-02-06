@@ -12,7 +12,7 @@
   max-height: 10vh;
   margin: 2.5%;
   transform: translateY(-300px);
-  transition: 1s;
+  transition: 0.4s;
 }
 h1{
   text-align: center;
@@ -21,7 +21,7 @@ h1{
   font-size: 3.3rem;
   margin: 0 auto;
   max-width: 100%;
-  transition: letter-spacing 1s;
+  transition: letter-spacing 0.4s;
 }
 .main__div--border{
   border-top: 1px solid #FFFFFF;
@@ -45,12 +45,12 @@ h1{
   padding: 0 0 5% 0;
   font-size: 3rem;
   font-weight: normal;
-  transition: transform 1s;
+  transition: transform 0.4s;
 }
 .main__article ul{
   margin: 0;
   padding-left: 2vw;
-  transition: transform 1s;
+  transition: transform 0.4s;
   font-size: 2rem;
 }
 .main__article ul li{
@@ -62,13 +62,13 @@ h1{
   align-items: center;
   font-size: 2rem;
   padding: 5% 5% 10% 5%;
-  transition: 0.75s;
+  transition: 0.4s;
 }
 .main__link a{
   padding: 5px 10px;
   border: 3px solid $secondary-color;
   border-radius: 25px;
-  transition: 0.75s;
+  transition: 0.4s;
 }
 .main__link img{
   max-width: 3vw
@@ -98,6 +98,16 @@ h1{
   padding: 0;
   list-style: none;
 }
+.back_to_top{
+  margin:0 auto;
+  width: 100%;
+  text-align: center;
+  padding: 0;
+  transition: 0.4s;
+}
+.back_to_top img{
+  width: 3vw;
+}
 /*********************
     ANIMATIONS
 *********************/
@@ -118,16 +128,9 @@ main section:hover .main__article h2, main section:hover .main__article ul{
   color: $background-color;
   border: 3px solid $secondary-color;
 }
-.back_to_top{
-  margin:0 auto;
-  width: 100%;
-  text-align: center;
-  padding: 0;
+.back_to_top:hover{
+  transform: scale(1.2);
 }
-.back_to_top img{
-  width: 3vw;
-}
-
 /*********************
 page caracteristiques
 **********************/
@@ -137,7 +140,7 @@ page caracteristiques
 .main2__article h2{
   border-bottom: 1px $secondary-color solid;
   font-weight: normal;
-  transition: 0.5s;
+  transition: 0.4s;
 }
 .main2__section img.absolute{
   top:0;
@@ -169,7 +172,7 @@ page caracteristiques
   width: 0;
   height: 1.5px;
   background: $secondary-color;
-  transition: width .3s;
+  transition: width .4s;
 }
 .main2__section2{
   margin-top: 20vh;
@@ -183,14 +186,14 @@ page caracteristiques
 .main2__article2 img{
   padding: 5px 10px;
   width: 5vw;
-  transition: 0.75s;
+  transition: 0.4s;
 }
 .main2__section2 h2{
   font-size: 3rem;
   font-weight: normal;
   text-align: center;
   margin-bottom: 0;
-  transition: 1s;
+  transition: 0.4s;
 }
 /*********************
     ANIMATIONS
@@ -237,47 +240,91 @@ page caracteristiques
 }
 /**************
   FORMULAIRE
-  ************/
-  form {
-    margin: 0 auto;
-    width: 400px;
-    padding: 1em;
-  }
-  
-  form div + div {
-    margin-top: 1em;
-  }
-  
-  label {
-    display: inline-block;
-    width: 90px;
-    text-align: right;
-  }
-  
-  input, textarea {
-    font: 1em sans-serif;
-    width: 300px;
-    box-sizing: border-box;
-    border: 1px solid #999;
-  }
-  input:focus, textarea:focus {
-    border-color: #000;
-  }
-  
-  textarea {
-    vertical-align: top;
-    height: 5em;
-  }
-  
-  .button {
-    padding-left: 90px;
-  }
-  
-  button {
-    margin-left: .5em;
-  }
-  
-  .seperation {
-    display:flex;
-    justify-content: space-between;
-  }
+************/
+.main_4 h2{
+  text-align: center;
+  font-weight: normal;
+  margin-bottom: 10vh;
+  font-size: 3rem;
+}
+.main_4 h3{
+  text-align: center;
+  font-size: 1.5rem;
+}
+.main_4 h2::before, .main_4 h2::after{
+  content:"";
+  width: 50%;
+  height: 1px;
+  display: block;
+  margin: 0 auto;
+  background: $secondary-color;
+}
+.main_4 h2::before{
+  transform: translateY(-20px);
+}
+.main_4 h2::after{
+  transform: translateY(20px);
+}
+form ul{
+  list-style: none;
+  padding: 0;
+}
+form input{
+  width: 100%;
+}
+form li{
+  padding: 5px 0;
+}
+form{
+  display: flex;
+  justify-content: space-around;
+}
+.price{
+  display: flex;
+  align-items: center;
+}
+.price h3{
+  font-size: 3rem;
+  padding: 0 10px;
+  margin: 0;
+}
+.input_double{
+  display: flex;
+  justify-content: space-between;
+}
+input[type=text]{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+input[type=submit]{
+  font-size: 1.5rem;
+  background-color: $tertiary-color;
+  color: $primary-color;
+  font-weight: bold;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+form section article{
+  text-align: center;
+}
+form img{
+  width: 13vw;
+}
+.asterisque{
+  margin: 0 auto;
+  padding: 50px 0;
+  text-align: center;
+}
+/*********************
+    ANIMATIONS
+*********************/
+input[type=submit]:hover{
+  background-color: $secondary-color;
+}

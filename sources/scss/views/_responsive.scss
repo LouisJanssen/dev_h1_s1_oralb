@@ -63,6 +63,19 @@
     .main_3 p{
         font-size: 1rem;
     }
+    form{
+        flex-flow: column;
+    }
+    form section{
+        margin: 0 auto;
+        width: 80%;
+    }
+    form img{
+        width: 31vw;
+    }
+    .main_4 h2{
+        font-size: 2rem;
+      }
 }
 @media screen and (max-width:720px){
     ul.hidden-lg li img{
@@ -130,6 +143,9 @@
     .main2__article--text{
         display: none;
     }
+    form img{
+        width: 40vw;
+      }
 }
 @media screen and (max-width:370px){
     .main__logo img{

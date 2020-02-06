@@ -41,41 +41,62 @@
       <img src="../images/io.png" alt="logo io">
     </div>
     <main class="main_4">
-      <form action="oral-b form" method="post">
-        <div class="seperation">
-          <ul>
-            <li>
-                <label for="NOM Prénom">NOM Prénom :</label>
-                <input type="text" name="user_nom">
-            </li>
-            <li>
-              <label for="email">Email :</label>
-              <input type="email" name="user_email">
-            </li>
-            <li>
-              <label for="pays">Pays :</label>
-              <input type="pays" name="user_pays">
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <label for="Adresse">Adresse :</label>
-              <input type="adresse" name="user_adresse">
-            </li>
-            <li>
-              <label for="Code postal">Code postal :</label>
-              <input type="code postal" name="user_codepostal">
-            </li>
-          </ul>
-        </div>
-        <div class="button">
-            <button type="button">Précommander iO</button>
-        </div>
-    </form>
+      <h2>Précommandez dés maintenant !</h2>
+      <form action="page.php" method="post" class="container">
+        <section>
+          <article>
+            <h3>Votre nom et adresse :</h3>
+            <ul>
+              <li>
+                <input id="name" name="prenomNom" type="text" placeholder="Prénom et Nom">
+              </li>
+              <li>
+                <input id="street" name="street" type="text" placeholder="Numéro et nom de rue">
+              </li>
+              <li class="input_double">
+                <input id="postal" name="postal" type="text" placeholder="Code postal">
+                <input id="city" name="city" type="text" placeholder="Ville">
+              </li>
+            </ul>
+          </article>
+          <article>
+            <h3>Vos coordonnées :</h3>
+            <ul>
+              <li>
+               <input id="email" name="email" type="text" placeholder="Adresse e-mail">
+              </li>
+              <li>
+               <input id="phoneNumber" name="phoneNumber" type="text" placeholder="Numéro de téléphone">
+              </li>
+            </ul>
+          </article>
+        </section>
+        <section>
+          <article>
+            <h3>Vos moyens de paiement :</h3>
+            <img src="../images/paiements.png" alt="moyens de paiements">
+            <ul>
+              <li>
+                <input id="cardNumber" name="cardNumber" type="text" placeholder="Numéro de carte de crédit">
+              </li>
+              <li class="input_double">
+                <input id="validDate" name="validDate" type="text" placeholder="Date exp.">
+                <input id="crypto" name="crypto" type="text" placeholder="Crypto">
+              </li>
+              <li class="price">
+                <h3>250€</h3><span>T.T.C.*</span>
+              </li>
+              <li>
+                <div class="submitButton">
+                  <input type="submit" value="Précommander">
+                </div>
+              </li>
+            </ul>
+          </article>
+        </section>
+      </form>
+      <p class="asterisque container">* : Prix indiqué pour une vente en France métropolitaine, livraison comprise.</p>
     </main>
-    <div class="back_to_top">
-      <a href="#"><img src="../images/btt.png" alt="arrow back to top"><br>Back to top</a>
-    </div>
     <section class="main__footer">
       <article class="main__footer__article">
         <ul>
