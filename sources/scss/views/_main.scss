@@ -27,7 +27,7 @@ h1{
   transition: letter-spacing 0.4s;
 }
 .main__div--border{
-  border-top: 1px solid #FFFFFF;
+  border-top: 1px solid $secondary-color;
   max-width: 70%;
   margin: 2% auto 0 auto;
 }
@@ -38,7 +38,7 @@ h1{
   padding: 1% 0;
 }
 .main__article{  
-  border-left: 1px solid #FFFFFF;
+  border-left: 1px solid $secondary-color;
   width: 60%;
   padding-left: 3%;
   font-size: 2.5rem;
@@ -79,8 +79,8 @@ h1{
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
-  border-top: 1px solid #FFFFFF;
-  background: rgba($color: #000000, $alpha: 0.25);
+  border-top: 1px solid $secondary-color;
+  background: rgba($color: $main__footer-color, $alpha: 0.25);
 }
 .main__footer img{
   height: 5vh;
@@ -307,7 +307,7 @@ form{
 input[type=text]{
   width: 100%;
   padding: 12px;
-  border: 1px solid #ccc;
+  border: 1px solid $form-color;
   border-radius: 4px;
   box-sizing: border-box;
   resize: vertical;
